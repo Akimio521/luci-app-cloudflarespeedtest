@@ -127,6 +127,15 @@ msgstr "禁用下载测速"
 msgid "Port"
 msgstr "端口"
 
+msgid "HTTPing mode(Use HTTP protocol)"
+msgstr "HTTPing测速模式（使用HTTP协议进行测速）"
+
+msgid "HTTPing Code(One code Only.0 represent unable)"
+msgstr "HTTPing测速返回的有效状态码（仅限一个。0代表不启用）"
+
+msgid "Specify regions using airport code.(HTTPing only!)"
+msgstr "使用机场三字码匹配指定地区（仅HTTPing模式下生效）"
+
 msgid "Not recommended"
 msgstr "不推荐"
 
