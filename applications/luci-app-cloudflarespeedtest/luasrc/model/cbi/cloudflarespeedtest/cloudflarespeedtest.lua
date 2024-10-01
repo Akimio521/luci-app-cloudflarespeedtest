@@ -105,6 +105,24 @@ o.default = 443
 o.datatype ="port"
 o:depends("advanced", 1)
 
+o = s:option(Value, "httping", translate("HTTPing mode(Use HTTP protocol)"))
+o.rmempty=true
+o.default = 0
+o.datatype ="httping"
+o:depends("advanced", 1)
+
+o = s:option(Value, "httping_code", translate("HTTPing Code(One code Only.0 represent unable)"))
+o.rmempty=true
+o.default = 0
+o.datatype ="uinteger"
+o:depends("advanced", 1)
+
+o = s:option(Value, "cfcolo", translate("Specify regions using airport code.(HTTPing only!)"))
+o.rmempty=true
+o.default = ""
+o.datatype ="cfcolo"
+o:depends("advanced", 1)
+
 o = s:option(DummyValue, '', '')
 o.rawhtml = true
 o.template = "cloudflarespeedtest/actions"

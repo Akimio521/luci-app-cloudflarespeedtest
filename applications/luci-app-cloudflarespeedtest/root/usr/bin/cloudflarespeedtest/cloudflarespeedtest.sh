@@ -58,6 +58,15 @@ function speed_test(){
         if [ $tp -ne "443" ] ; then
             command="${command} -tp ${tp}"
         fi
+        if [ $httping -eq "1" ] ; then
+            command="${command} -httping"
+        fi
+        if [ $httping_code -eq "1" ] ; then
+            command="${command} -httping-code $httping_code"
+        fi
+        if [ $cfcolo -eq "" ] ; then
+            command="${command} -cfcolo $cfcolo"
+        fi
     else
         command="${command} -tl 200 -tll 40 -n 200 -t 4 -dt 10 -dn 1"
     fi
